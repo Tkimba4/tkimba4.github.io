@@ -214,13 +214,13 @@ nav .menu {
       background-color: gray;
       transition: 0.3s;
       &:hover {
-        box-shadow: var(--cPrimary) -2px -2px 5px;
+        /* box-shadow: var(--cPrimary) -2px -2px 5px; */
       }
       img {
         transition: 0.5s;
         max-width: 100%;
         &:hover {
-          transform: scale(1.2);
+          /* transform: scale(1.1); */
         }
       }
     }
@@ -374,7 +374,7 @@ nav .menu {
   .service {
     padding: 20px;
     border-radius: 10px;
-    box-shadow: var(--cSecondary) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
     background-color: white;
     transition: 0.3s;
     text-wrap: pretty;

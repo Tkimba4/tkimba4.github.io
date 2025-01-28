@@ -47,6 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   })();
 
+  //Services
+  (()=>{
+    const btnServicesContact = document.querySelector('.btn-services-contact');
+    btnServicesContact.addEventListener('click', ()=>{document.getElementById('contact').scrollIntoView()})
+  })();
+
   //show/hidden btn-to-up
   //   (() => {
   //     const btnToUp = document.querySelector(".btn-to-up button");
