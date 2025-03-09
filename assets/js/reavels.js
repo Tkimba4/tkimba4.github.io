@@ -19,7 +19,11 @@
     }
   );
   reveals.forEach((reveal) => {
-    reveal.style.opacity = 0;
+    const rect = reveal.getBoundingClientRect();
+    if (rect.bottom > 0) {
+      reveal.style.opacity = 0;
+      observerReveals.observe(reveal);
+    }
     observerReveals.observe(reveal);
   });
 })();

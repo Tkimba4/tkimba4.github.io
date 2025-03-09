@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tkimba4</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <meta name="description" content="Simple portfolio" />
+    <title>Terra Kimba</title>
+    <meta name="theme-color" content="#4072cf" />
+    <meta
+      name="description"
+      content="Terra Kimba dévéloppeur web | Portfolio"
+    />
+    <meta proprerty="og:titile" content="Terra Kimba" />
+    <meta
+      proprerty="og:descripiton"
+      content="Terra Kimba dévéloppeur web | Portfolio"
+    />
+    <meta proprerty="og:image" content="assets/images/bg.jpg" />
     <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
     <header class="hero" id="home">
       <div class="container">
@@ -20,11 +29,6 @@
           </div>
           <h2>Développeur Web</h2>
         </div>
-        <!-- <div class="hero-btn-dow">
-          <button type="button" class="btn" id="btn-scrollDown">
-            <img src="assets/icons/chevrons-down.svg" alt="chevrons-down" />
-          </button>
-        </div> -->
       </div>
     </header>
     <nav>
@@ -45,249 +49,237 @@
             <li><a href="#home">Accueil</a></li>
             <li><a href="#about">A propos</a></li>
             <li><a href="#services">Services</a></li>
-            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <main>
-      <div class="about" id="about">
+      <section class="about" id="about">
         <div class="container about-presentation">
-          <div class="about-img" data-reveal="img-left">
-            <div class="img">
+          <h2 class="title">A propos</h2>
+          <div class="content">
+            <div class="about-img" data-reveal="img-left">
               <img
-                src="assets/images/about.jpg"
+                class="img-animate"
+                src="assets/images/web-developer.svg"
                 alt="Photo de Tkimba4"
                 loading="lazy"
+                width="200"
+                height="200"
               />
             </div>
-          </div>
-          <div class="text">
-            <h3 data-reveal="1">Qui suis-je?</h3>
-            <p data-reveal="2">
-              <span> Je suis Terra Kimba, développeur web fullstack. </span>
-              <br />
-              Passionné par la création de solutions numériques innovantes, ma
-              mission est de concrétiser des concepts en expériences utilisateur
-              attreyante et fonctionnelle. <br />
-              Avec une volonté constante d'apprendre et d'innover, je m'efforce
-              de rester à la pointe des dernières technologies et tendances du
-              développement web. Chaque projet est pour moi une opportunité
-              d'apporter une contribution positive et de repousser les limites
-              de ce qui est possible.
-            </p>
-            <div class="cv" data-reveal="2">
-              <a href="assets/doc/CV.pdf" class="cv-download"
-                >Télécharger mon CV
-              </a>
+            <div class="about-text">
+              <div class="who-am-i" data-reveal="2">
+                <h3>Qui suis-je?</h3>
+                <p>
+                  <span> Je suis Terra Kimba, développeur web.</span> <br />
+                  Passionné par la création de solutions numériques, ma mission
+                  est de concrétiser des concepts en expériences utilisateur
+                  fonctionnelle. <br />
+                  Avec une volonté constante d'apprendre, je m'efforce de rester
+                  à la pointe des dernières technologies et tendances du
+                  développement web. Chaque projet est pour moi une opportunité
+                  d'apporter une contribution positive et de repousser les
+                  limites de ce qui est possible.
+                </p>
+              </div>
+              <div class="skills" data-reveal="3">
+                <h3>Technologies</h3>
+                <div class="skills-content">
+                  <!--<div>
+                    <img
+                      src="assets/images/html.png"
+                      width="50"
+                      height="50"
+                      alt="logo-html"
+                    />
+                    <p>HTML</p>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/css.png"
+                      width="50"
+                      height="50"
+                      alt="logo-css"
+                    />
+                    <p>CSS</p>
+                  </div>-->
+                  <div>
+                    <img
+                      src="assets/images/javascript.png"
+                      width="50"
+                      height="50"
+                      alt="logo-javascript"
+                    />
+                    <p>javascript</p>
+                  </div>
+                  <!-- <div>
+                    <img
+                      src="assets/images/typescript.png"
+                      width="50"
+                      height="50"
+                      alt="logo-typescript"
+                    />
+                    <p>typescript</p>
+                  </div> -->
+                  <!-- <div>
+                    <img
+                      src="assets/images/php.png"
+                      width="50"
+                      height="50"
+                      alt="logo-php"
+                    />
+                    <p>PHP</p>
+                  </div> -->
+                  <!-- <div>
+                    <img
+                      src="assets/images/mongodb.png"
+                      width="50"
+                      height="50"
+                      alt="logo-mongodb"
+                    />
+                    <p>MongoDB</p>
+                  </div> -->
+                  <div>
+                    <img
+                      src="assets/images/react.png"
+                      width="50"
+                      height="50"
+                      alt="logo-react"
+                    />
+                    <p>ReactJS</p>
+                  </div>
+                  <!-- <div>
+                    <img
+                      src="assets/images/nextjs.png"
+                      width="50"
+                      height="50"
+                      alt="logo-nextjs"
+                    />
+                    <p>NextJS</p>
+                  </div> -->
+                  <!-- <div>
+                    <img
+                      src="assets/images/wordpress.png"
+                      width="50"
+                      height="50"
+                      alt="logo-wordpress"
+                    />
+                    <p>Wordpress</p>
+                  </div> -->
+                  <!--<div>
+                    <img
+                      src="assets/images/bootstrap.png"
+                      width="50"
+                      height="50"
+                      alt="logo-bootstrap"
+                    />
+                    <p>Bootstrap</p>
+                  </div>-->
+                  <div>
+                    <img
+                      src="assets/images/sass.png"
+                      width="50"
+                      height="50"
+                      alt="logo-sass"
+                    />
+                    <p>SASS</p>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/nodejs.png"
+                      width="50"
+                      height="50"
+                      alt="logo-nodejs"
+                    />
+                    <p>NodeJS</p>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/mysql.png"
+                      width="50"
+                      height="50"
+                      alt="logo-mysql"
+                    />
+                    <p>MySQL</p>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/figma.png"
+                      width="50"
+                      height="50"
+                      alt="logo-figma"
+                    />
+                    <p>Figma</p>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/git.png"
+                      width="50"
+                      height="50"
+                      alt="logo-git"
+                    />
+                    <p>Git</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dots"></div>
             </div>
           </div>
         </div>
-        <div class="container about-views">
-          <div class="view-menu" data-reveal="2">
-            <button type="button" class="active" data-setView="skills">
-              Connaissances
-            </button>
-            <button type="button" data-setView="formations">Etudes</button>
-          </div>
-          <div class="views-content" data-reveal="3">
-            <div class="view active" data-view="skills">
-              <div class="content">
-                <div>
-                  <img
-                    src="assets/images/html.png"
-                    width="50"
-                    height="50"
-                    alt="logo-html"
-                  />
-                  <p>HTML</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/css.png"
-                    width="50"
-                    height="50"
-                    alt="logo-css"
-                  />
-                  <p>CSS</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/javascript.png"
-                    width="50"
-                    height="50"
-                    alt="logo-javascript"
-                  />
-                  <p>javascript</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/typescript.png"
-                    width="50"
-                    height="50"
-                    alt="logo-typescript"
-                  />
-                  <p>typescript</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/php.png"
-                    width="50"
-                    height="50"
-                    alt="logo-php"
-                  />
-                  <p>PHP</p>
-                </div>
-                <!-- <div>
-                  <img
-                    src="assets/images/mongodb.png"
-                    width="50"
-                    height="50"
-                    alt="logo-mongodb"
-                  />
-                  <p>MongoDB</p>
-                </div> -->
-                <div>
-                  <img
-                    src="assets/images/mysql.png"
-                    width="50"
-                    height="50"
-                    alt="logo-mysql"
-                  />
-                  <p>MySQL</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/nodejs.png"
-                    width="50"
-                    height="50"
-                    alt="logo-nodejs"
-                  />
-                  <p>NodeJS</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/react.png"
-                    width="50"
-                    height="50"
-                    alt="logo-react"
-                  />
-                  <p>ReactJS</p>
-                </div>
-                <!-- <div>
-                  <img
-                    src="assets/images/nextjs.png"
-                    width="50"
-                    height="50"
-                    alt="logo-nextjs"
-                  />
-                  <p>NextJS</p>
-                </div> -->
-                <div>
-                  <img
-                    src="assets/images/wordpress.png"
-                    width="50"
-                    height="50"
-                    alt="logo-wordpress"
-                  />
-                  <p>Wordpress</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/bootstrap.png"
-                    width="50"
-                    height="50"
-                    alt="logo-bootstrap"
-                  />
-                  <p>Bootstrap</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/sass.png"
-                    width="50"
-                    height="50"
-                    alt="logo-sass"
-                  />
-                  <p>SASS</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/figma.png"
-                    width="50"
-                    height="50"
-                    alt="logo-figma"
-                  />
-                  <p>Figma</p>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/git.png"
-                    width="50"
-                    height="50"
-                    alt="logo-git"
-                  />
-                  <p>Git</p>
-                </div>
-              </div>
-            </div>
-            <div class="view" data-view="formations">
-              <div class="content">
-                <div class="formation ucc">
-                  <h4>Diplôme de licence</h4>
-                  <h5>Informatique de gestion</h5>
-                  <h6>Université Catholique Du Congo - 2023</h6>
-                </div>
-                <div class="formation ib">
-                  <h4>Diplôme d'état</h4>
-                  <h5>Mathématique-Physique</h5>
-                  <h6>Institut Bakanja - 2019</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="services" id="services">
+      </section>
+      <section class="services" id="services">
         <div class="container">
-          <h2 class="title" data-reveal="1">Services</h2>
-          <div class="content">
-            <div class="service" data-reveal="2">
+          <h2 class="title">Services</h2>
+          <p class="sub-title" data-reveal="1">
+            Je propose des services sur mesure pour donner vie à vos projets
+            numériques. Que ce soit pour la conception, le développement ou
+            l’optimisation, chaque solution est pensée pour allier performance,
+            esthétique et expérience utilisateur.
+          </p>
+          <div class="services-content">
+            <div class="service web-development" data-reveal="2">
               <div class="service-img">
                 <img
-                  src="assets/images/web.png"
-                  alt="website"
-                  width="50"
-                  height="50"
+                  src="assets/images/website.svg"
+                  alt="web-development"
+                  width="100"
+                  height="100"
                 />
               </div>
-              <h4>Site & App Web</h4>
+              <h4>Developpement web</h4>
               <p>
                 Conception des sites et app web interactives et dynamiques avec
-                une epxérience utilisateur fluide. Nos solutions sont conçus
-                pour être évolutives et sécurisées.
+                une epxérience utilisateur fluide, conçus pour être évolutives
+                et sécurisées.
               </p>
             </div>
-
-            <div class="service" data-reveal="3">
+            <div class="service design" data-reveal="3">
               <div class="service-img">
                 <img
-                  src="assets/images/api.png"
-                  alt="api"
-                  width="50"
-                  height="50"
+                  src="assets/images/design.svg"
+                  alt="web design"
+                  width="100"
+                  height="100"
                 />
               </div>
-              <h4>APIs RESTful</h4>
+              <h4>Web design</h4>
               <p>
-                Développement des APIs RESTful pour permettre une communication
-                efficace entre différentes parties de votre application ou avec
-                des services externes.
+                Conception de designs web clairs et intuitifs, incluant la
+                création de wireframes et de prototypes interactifs pour
+                structurer et optimiser l’expérience utilisateur.
               </p>
             </div>
-            <div class="service" data-reveal="4">
+            <div class="service database" data-reveal="4">
               <div class="service-img">
-                <img src="assets/images/database.png" alt="web app" />
+                <img
+                  src="assets/images/database.svg"
+                  alt="database"
+                  width="100"
+                  height="100"
+                />
               </div>
               <h4>Base de données</h4>
               <p>
@@ -297,183 +289,198 @@
               </p>
             </div>
           </div>
-          <div class="services-idea">
-            <div class="img" data-reveal="img-right">
-              <img src="assets/images/idea.jpg" alt="idea" loading="lazy" />
-            </div>
-            <div class="text">
-              <h3 data-reveal="2">Une idée en tête ?</h3>
-              <p data-reveal="3">
-                Une idée en tête pour un projet innovant ? <br />
-                Je suis à vos côtés pour le concrétiser. De la conception à la
-                mise en œuvre, je vous accompagne avec expertise et passion pour
-                transformer vos visions en solutions complètes et sur mesure,
-                adaptées à vos besoins.
-              </p>
-              <button
-                type="button"
-                class="btn-services-contact"
-                data-reveal="4"
-              >
-                Contactez-moi
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- <div id="portfolio" class="portfolio">
+      </section>
+      <section id="projects" class="projects">
         <div class="container">
-          <h2 class="title" data-reveal="1">Portfolio</h2>
-          <div class="content">
+          <h2 class="title">Projets</h2>
+          <p class="sub-title" data-reveal="1">
+            Découvrez quelques projets sur lesquels je travaille en ce moment
+            axés sur la conception web, mettant l’accent sur la simplicité,
+            l’efficacité et une bonne expérience utilisateur.
+          </p>
+          <div class="projects-content">
             <div class="project" data-reveal="2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe non
-              esse facere laudantium aut aliquid voluptatum, soluta facilis!
-              Consectetur earum autem itaque facilis laboriosam officia tempora
-              deleniti odit soluta dolor?
+              <a class="project-link" href="#" target="_blank"
+                ><img
+                  src="./assets/icons/github.svg"
+                  width="20"
+                  height="20"
+                  alt="github"
+              /></a>
+              <div class="project-img">
+                <img
+                  src="./assets/images/website0.svg"
+                  width="200"
+                  height="200"
+                  alt="Flyer for the future"
+                />
+              </div>
+              <h4 class="project-title">Flyer for the future</h4>
+              <p class="project-description">
+                Site internet de flyer for the future spécialisée dans le
+                développement, le design et divers formations pour des solutions
+                innovantes et sur-mesure.
+              </p>
             </div>
             <div class="project" data-reveal="3">
-              Cupiditate aspernatur, eveniet temporibus ducimus praesentium
-              excepturi officiis ab nisi non deleniti obcaecati voluptatem quae
-              ullam rerum nostrum tempora? Minima nihil asperiores dolore ipsa
-              deserunt. Quas odit praesentium inventore cupiditate.
+              <a class="project-link" href="#" target="_blank"
+                ><img
+                  src="./assets/icons/github.svg"
+                  width="20"
+                  height="20"
+                  alt="github"
+              /></a>
+              <div class="project-img">
+                <img
+                  src="./assets/images/athletes-training.svg"
+                  width="200"
+                  height="200"
+                  alt="Konzo Club"
+                />
+              </div>
+              <h4 class="project-title">Konzo Club</h4>
+              <p class="project-description">
+                Site interactif d'une salle de sport, proposant des équipements
+                modernes, des cours variés et un accompagnement personnalisé
+                pour tous.
+              </p>
             </div>
             <div class="project" data-reveal="4">
-              Ullam sit, voluptatem maxime labore eius excepturi, soluta non
-              quaerat, animi id sint nam ipsum hic a officiis culpa veritatis
-              tempora fuga. Vitae voluptas excepturi ullam. Totam iure aperiam
-              aliquam.
+              <a class="project-link" href="#" target="_blank"
+                ><img
+                  src="./assets/icons/github.svg"
+                  width="20"
+                  height="20"
+                  alt="github"
+              /></a>
+              <div class="project-img">
+                <img
+                  src="./assets/images/shopping-app.svg"
+                  width="200"
+                  height="200"
+                  alt="Mini shoping"
+                />
+              </div>
+              <h4 class="project-title">Mini shoping</h4>
+              <p class="project-description">
+                Site e-commerce élégant, offrant une large gamme de produits,
+                une expérience utilisateur fluide et des paiements sécurisés en
+                ligne.
+              </p>
             </div>
           </div>
         </div>
-      </div> -->
-      <div id="contact" class="contact">
-        <div class="container">
-          <h2 class="title" data-reveal="1">Contact</h2>
-          <div class="content">
-            <div class="form">
-              <form
-                action="https://formsubmit.co/tkimba4.dev@gmail.com"
-                method="POST"
-                data-reveal="img"
-              >
-                <input type="hidden" name="_template" value="table" />
-                <input
-                  type="hidden"
-                  name="_autoresponse"
-                  value="Votre message a
-                  été reçu avec success!"
-                  id=""
-                />
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="Soumission depuis Tkimba4"
-                />
-                <input
-                  id="names"
-                  type="text"
-                  name="names"
-                  required
-                  placeholder="Nom & Prénom*"
-                  autocomplete="off"
-                />
-                <input id="phone" type="tel" name="phone" placeholder="Tél." />
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="Email*"
-                />
-                <textarea
-                  id="message"
-                  type="text"
-                  name="message"
-                  required
-                  placeholder="Message*"
-                  rows="5"
-                ></textarea>
-                <div class="">
-                  <button type="submit">Soumettre</button>
-                </div>
-              </form>
-            </div>
-            <div class="contact-details">
-              <div class="details">
-                <!-- <div class="detail" data-reveal="2">
-                  <div class="img">
-                    <img src="assets/icons/tel.svg" alt="icon tel" />
-                  </div>
-                  <div class="info">
-                    <span>Tél</span>
-                    <a href="https://wa.link/ujcffl">+243 842 445 076</a>
-                  </div>
-                </div> -->
-                <div class="detail" data-reveal="1">
-                  <div class="img">
-                    <img src="assets/icons/email.svg" alt="icon email" />
-                  </div>
-                  <div class="info">
-                    <span>E-mail</span>
-                    <a href="mailto:tkimba4.dev@gmail.com"
-                      >Tkimba4.dev@gmail.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="social-networks">
-                <ul>
-                  <li data-reveal="1">
-                    <a href="https://wa.link/ujcffl" target="_blank">
-                      <img src="assets/icons/whatsapp.svg" alt="logo-whatsapp"
-                    /></a>
-                  </li>
-                  <li data-reveal="2">
-                    <a href="https://facebook.com/tkimba4" target="_blank">
-                      <img src="assets/icons/facebook.svg" alt="logo-facebook"
-                    /></a>
-                  </li>
-                  <li data-reveal="3">
-                    <a href="https://instagram.com/tkimba4" target="_blank">
-                      <img
-                        src="assets/icons/instagram.svg"
-                        alt="logo-instagram"
-                      />
-                    </a>
-                  </li>
-                  <li data-reveal="4">
-                    <a href="https://linkedin.com/in/tkimba4" target="_blank">
-                      <img
-                        src="assets/icons/linkedin.svg"
-                        alt="logo-linkedin"
-                      />
-                    </a>
-                  </li>
-                  <li data-reveal="5">
-                    <a href="https://github.com/tkimba4" target="_blank"
-                      ><img src="assets/icons/github.svg" alt="logo-github"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="container start-project">
+          <div class="dots"></div>
+          <div class="start-project-img" data-reveal="img-right">
+            <img
+              class="img-animate"
+              src="assets/images/interview.svg"
+              alt="interview"
+              loading="lazy"
+              width="200"
+              height="300"
+            />
+          </div>
+          <div class="start-project-text" data-reveal="3">
+            <h3>Débutons un projet</h3>
+            <p>
+              Prêt à concrétiser votre projet ? <br />Contactez-moi dès
+              aujourd'hui pour discuter de vos besoins et créer ensemble une
+              solution sur-mesure !
+            </p>
+            <button
+              type="button"
+              aria-label="Contactez-moi"
+              class="start-project-btn"
+            >
+              Contactez-moi
+            </button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer>
+    <footer id="contact" class="contact">
       <div class="container">
-        <div class="logo">
-          <p>Tkimba<span class="number">4</span></p>
-        </div>
-        <p>
-          Design by
-          <a href="https://flyerff.net" target="_blank">Flyer for the future</a>
+        <h2 class="title">Contact</h2>
+        <p class="sub-title" data-reveal="1">
+          Une question, une demande ou simplement envie d’échanger ? N’hésitez
+          pas à m’écrire ou à me contacter par téléphone. Je vous répondrai dans
+          les plus brefs délais !
         </p>
+        <div class="content">
+          <div class="contact-img" data-reveal="img-left">
+            <img
+              class="img-animate"
+              src="./assets/images/message.svg"
+              alt="contact"
+              width="200"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="contact-details">
+            <div class="details" data-reveal="img">
+              <div class="detail">
+                <div class="detail-img">
+                  <img
+                    src="assets/icons/tel.svg"
+                    width="24"
+                    height="24"
+                    alt="icon tel"
+                  />
+                </div>
+                <div class="detail-info">
+                  <span>Tél.</span>
+                  <a href="tel:+243842445076"> +243 842 445 076 </a>
+                </div>
+              </div>
+              <div class="detail">
+                <div class="detail-img">
+                  <img
+                    src="assets/icons/email.svg"
+                    width="24"
+                    height="24"
+                    alt="icon email"
+                  />
+                </div>
+                <div class="detail-info">
+                  <span>Email</span>
+                  <a href="mailto:tkimba4.dev@gmail.com">
+                    Tkimba4.dev@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div class="detail">
+                <div class="detail-img">
+                  <img
+                    src="assets/icons/linkedin.svg"
+                    width="24"
+                    height="24"
+                    alt="icon linkedin"
+                  />
+                </div>
+                <div class="detail-info">
+                  <span>Linkedin</span>
+                  <a href="https://www.linkedin.com/in/tkimba4">
+                    Terra Kimba
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>
+                © <span id="footer-date">2025</span>
+                <span class="footer-name">Terra Kimba.</span> Tous droits
+                reservés.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/reavels.js"></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/reavels.js" defer></script>
   </body>
 </html>
