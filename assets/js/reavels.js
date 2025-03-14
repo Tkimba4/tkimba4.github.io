@@ -24,6 +24,5 @@
       reveal.style.opacity = 0;
       observerReveals.observe(reveal);
     }
-    observerReveals.observe(reveal);
   });
 })();
