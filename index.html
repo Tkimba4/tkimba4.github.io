@@ -38,43 +38,82 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="hero" id="home">
-      <div class="container">
-        <div class="hero-text">
-          <p>Salut, je suis</p>
-          <div>
-            <h1>Terra</h1>
-            <h1>Kimba</h1>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <div class="img">
+            <img
+              src="./favicon.svg"
+              alt="avatar"
+              width="40"
+              height="40"
+            />
           </div>
-          <h2>Développeur Web</h2>
+          <div class="text">
+            <span class="nav-name">Terra Kimba</span>
+            <span class="nav-work">Développeur web</span>
+          </div>
         </div>
+        <div class="container-btn-menu" id="container-btn-nav-menu">
+          <button
+            class="btn-menu"
+            id="btn-menu"
+            type="button"
+            aria-label="Menu"
+          >
+            <span></span>
+            <span></span>
+            <!-- <img
+              src="assets/icons/menu.svg"
+              alt="menu"
+              width="30"
+              height="30"
+            /> -->
+          </button>
+        </div>
+        <nav id="nav-menu">
+          <div class="content">
+            <div class="profil">
+              <div class="img">
+                <img
+                  src="./favicon.svg"
+                  alt="avatar"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div class="">
+                <span class="nav-name">Terra Kimba</span>
+                <span class="nav-work">Développeur web</span>
+              </div>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
-    <nav>
-      <div class="container">
-        <div class="row">
-          <div class="logo">
-            <p>Tkimba<span class="number">4</span></p>
-          </div>
-          <div class="menu" id="navMenu">
-            <button type="button" aria-label="Menu">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+
     <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-text">
+            <p>Salut, je suis</p>
+            <div>
+              <h1>Terra</h1>
+              <h1>Kimba</h1>
+            </div>
+            <h2>Développeur Web</h2>
+          </div>
+        </div>
+      </section>
       <section class="about" id="about">
         <div class="container about-presentation">
           <h2 class="title">A propos</h2>
