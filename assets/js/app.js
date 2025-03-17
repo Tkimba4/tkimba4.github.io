@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const el = link.getAttribute("href").replace("#", "");
         document.getElementById(el).scrollIntoView();
+        if(document.querySelector("#nav-menu").className.includes("show")){
+          document.querySelector("#nav-menu").classList.remove("show");
+          document.querySelector("#btn-menu").classList.remove("show");
+        }
       });
     });
     showMenu("btn-menu", "nav-menu");
