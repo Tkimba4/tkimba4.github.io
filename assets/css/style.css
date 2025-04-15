@@ -400,6 +400,17 @@ nav.show {
     color: var(--cGray);
   }
 }
+.service:hover {
+  background-color: var(--cPrimary);
+  h4,
+  p {
+    color: white;
+  }
+}
+
+.service:hover .service-img {
+  background-color: rgba(255, 255, 255, 0.801);
+}
 
 .service-img {
   background-color: var(--cSecondary);
@@ -633,6 +644,10 @@ footer .container {
   }
   .services-content {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .service:hover {
+    transform: scale(1.05);
   }
   .projects-content {
     grid-template-columns: repeat(3, 1fr);
